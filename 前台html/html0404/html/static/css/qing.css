@@ -1,0 +1,95 @@
+/* 通用样式开始 */
+body{margin:0;font-family:"Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti;
+font-size:14px;color:#333;line-height:180%;background:#FFF;-webkit-text-size-adjust:none}
+:focus{outline:0}
+
+.w100{width: 900px;margin:0 auto;}
+
+.fleft{float: left;}
+
+.fright{float: right!important}
+
+.color1{color: #002a72}/* 网站主颜色 */
+
+
+.colorfff{color:#fff;}
+.f16{font-size: 16px}
+.f18{font-size: 18px}
+.f20{font-size: 20px}
+.f22{font-size: 22px}
+.f26{font-size: 26px}
+.f30{font-size: 30px}
+.f36{font-size: 36px}
+.fb{font-weight: bold;}
+.mar_t_10{margin-top: 10px}
+.mar_t_15{margin-top: 15px}
+.mar_t_20{margin-top: 20px}
+.mar_t_30{margin-top: 30px}
+.mar_t_50{margin-top: 50px}
+.mar_t_60{margin-top: 60px}
+.mar_t_70{margin-top: 70px}
+.mar_t_80{margin-top: 80px}
+.mar_b_20{margin-bottom: 20px}
+.mar_b_30{margin-bottom: 30px}
+.mar_l_30{margin-left: 30px}
+.mar_r_30{margin-right: 30px}
+
+.padd_t_20{padding-top: 20px}
+.padd_t_30{padding-top: 30px}
+.padd_t_50{padding-top: 50px}
+.padd_t_80{padding-top: 80px}
+.padd_b_20{padding-bottom: 20px}
+.padd_b_30{padding-bottom: 30px}
+.padd_b_50{padding-bottom: 50px}
+.padd_r_30{padding-right: 30px}
+.text_center{text-align: center;}
+.text_right{text-align: right;}
+.line24{line-height: 24px}
+.line30{line-height: 30px}
+.line50{line-height: 50px}
+.display_block{display: inline-block;}
+
+@charset "utf-8";
+/* 公共样式 */
+
+
+
+
+/* 大屏幕 */
+
+@media screen and (min-width: 1200px) { 
+
+
+
+}
+
+
+
+
+
+/* 平板电脑和小屏电脑之间的分辨率 */
+
+@media (min-width: 768px) and (max-width: 979px){
+
+
+
+
+
+
+}
+
+
+
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+
+@media (max-width: 767px) {
+
+}
+
+/* 横向放置的手机及分辨率更小的设备 */
+
+@media (max-width: 480px) {
+
+
+
+}

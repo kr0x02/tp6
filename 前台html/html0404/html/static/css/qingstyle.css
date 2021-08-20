@@ -1,0 +1,96 @@
+.positionbg{height: 56px;width: 100%;line-height: 56px;background: #efeff0}
+#nleft_content{width: 25%;float: left;}
+#nleft_content .nleft_title{ height: 48px;line-height: 48px;background: #efeff0;padding-left: 30px;clear: both; }
+#nleft_content .nleft_boder{border:1px solid #efeff0; border-top: none;float: left;padding: 15px;}
+#nleft_content .chanpin_logo li{width: 45%;margin:0 auto;border:1px solid #efeff0; margin-bottom: 20px;text-align:center;float: left;}
+#nleft_content .chanpin_logo li:nth-child(1){
+	margin-right: 20px;
+}
+
+#nleft_content .chanpin_logo li:nth-child(3){
+	margin-right: 20px;
+}
+
+#nright_content{border:1px solid #eeeeee;padding:20px;margin-left: 30px;width: 68%;float: left;line-height: 30px;min-height: 710px}
+
+
+.nnews_box li{width: 100%;display: inline-block;margin-bottom: 20px;border-bottom: 1px dashed #ddd;padding-bottom:10px;}
+.nnews_box li a{}
+
+.fenye{ padding: 20px; text-align: center;clear: both;}
+.fenye li{ padding-left:5px; padding-right:5px; display: inline;}
+.thisclass{ font-weight: bold; }
+
+.nsolution li{width: 96%;display: inline-block;line-height: 36px;border-bottom: 1px dashed #ddd;
+			background: url(../images/arrow.jpg) no-repeat center left; padding-left: 2%}
+.nsolution li a{float: left;margin-left:10px;}
+.nsolution li .time{float: right;color: #aaa;font-size: 12px;}
+
+.ncpzx_nav{ margin-top: 20px; }
+.ncpzx_nav ul li{ width: 90px; height: 38px; background: #f3f3f3; display: inline-block; margin-right: 15px; text-align: center; line-height: 38px; }
+.cur{ background: #da0303; width: 90px; height: 38px; color: #fff; display: block;}
+.cur:hover{ color: #fff }
+
+.nproduct .item{text-align: center;}
+.nproduct .item img{width: 100%;border: 1px solid #ddd;height: 150px;margin-bottom: 5px}
+.nproduct .item p{line-height: 26px;height: 52px}
+
+.wenzhang_title{ font-size: 24px; width: 100%; text-align: center; font-size: 26px; margin-top: 35px; color: #666;}
+.wenzhang_time{ width: 100%;text-align: center;  color: #aaa; margin-top: 10px;}
+.wenzhang_body{ margin-top: 20px; line-height: 28px; color: #666 }
+.wenzhang_body table{max-width: 100%}
+.wenzhang_shangxia{ margin-top: 20px; padding-top: 20px; border-top: 1px solid #ccc; width: 100%; text-align: center; color: #666;}
+.wenzhang_shangxia .shang{ float: left;margin-bottom: 50px; }
+.wenzhang_shangxia .xia{float: right;}
+
+/* 大屏幕 */
+
+@media screen and (min-width: 1200px) { 
+
+
+
+}
+
+
+
+
+
+/* 平板电脑和小屏电脑之间的分辨率 */
+
+@media (min-width: 768px) and (max-width: 979px){
+
+
+
+
+
+
+}
+
+
+
+/* 横向放置的手机和竖向放置的平板之间的分辨率 */
+
+@media (max-width: 767px) {
+
+#nleft_content{display: none}
+.nbanner{background-size: cover!important;height: 160px!important;}
+.newsbg{background-size: cover!important;height: 200px!important;}
+.solutionbg{background-size: cover!important;height: 100px!important;}
+
+#nright_content{width: 94%;margin-left: 0;padding-left: 3%;padding-right: 3%;min-height:100px}
+#nright_content iframe{width: 98%}
+#nright_content img{max-width: 98%;height: auto}
+.nsolution li .time{display: none}
+.ncpzx_nav{margin-top: 0px}
+.ncpzx_nav ul li{width: 45%;margin-bottom:20px;}
+.cur{width: 100%}
+
+}
+
+/* 横向放置的手机及分辨率更小的设备 */
+
+@media (max-width: 480px) {
+
+
+
+}
