@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+        <meta charset="utf-8">
+
+    <meta name="viewport"
+        content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>DongAdmin</title>
+
+    <link rel="stylesheet" type="text/css" href="/public/static/admin2/css/admin.css" />
+
+    <link rel="stylesheet" type="text/css" href="/public/static/index/layui/css/layui.css" />
+
+</head>
+
+<body>
+
+
+    <div class="container">
+         <div class="left_content">
+            <div class="login text_center ">
+                <a class="display_inline_block" href="/dongadmin/index/index.html">后台管理系统</a>
+                <span class="display_inline_block">V0.0.1</span>
+            </div>
+            <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: 10px; margin-top: 10px">
+                    <li class="layui-nav-item layui-nav-itemed">
+                    <a href="javascript:;"><i class="iconfont icon-neirong"></i> 栏目内容</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/dongadmin/category/index.html">栏目管理</a></dd>
+                        <dd><a href="/dongadmin/content/index.html">文档管理</a></dd>
+
+                    </dl>
+                </li>
+                <li class="layui-nav-item ">
+                    <a href="javascript:;"><i class="iconfont icon-tupian"></i> 广告管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="/dongadmin/ad/index.html">广告管理</a></dd>
+                        <dd><a href="/dongadmin/ad/adtype.html">广告分组</a></dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item ">
+                        <a href="javascript:;"><i class="iconfont icon-shezhi"></i> 系统管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/dongadmin/config/index.html">系统参数</a></dd>
+                            <dd><a href="/dongadmin/flink/index.html">友情链接</a></dd>
+                            <dd><a href="/dongadmin/config/del_cache.html">清空缓存</a></dd>
+                            <dd><a href="/dongadmin/config/edit_password.html">修改密码</a></dd>
+                        </dl>
+                    </li>
+            </ul>
+
+
+
+
+        </div>
+        <div class="right_content">
+            <div class="right_content_top">
+    <a href="#">联系QQ：1406357182</a>
+    <a href="/" target="_blank">网站首页</a>
+    <a href="/dongadmin/index/logout.html">退出登录</a>
+</div>
+            <div class="right_content_main">
+                <div class="right_content_main_box padding_20">
+                        <span class="layui-breadcrumb">
+                                <a href="/dongadmin/index/index.html">首页</a>
+                                <a><cite>文档管理</cite></a>
+                            </span>
+                            <div class="mar_t_15 ">
+
+                                <a class="layui-btn " href="/dongadmin/content/add.html?">+添加</a>
+                         
+                                <form class="public_search_form mar_b_30">
+                                    <input type="text" name="searchkey" autocomplete="off" class="layui-input fleft"  value="搜索关键字" >
+      
+                                    <select name="cate_id" class="public_select fleft">
+                                        
+                                      <option value="">全部</option>
+                                                                              <option value="1"
+                                                                                      >企业简介</option>
+                                                                              <option value="2"
+                                                                                      >产品中心</option>
+                                                                              <option value="3"
+                                                                                      >--------产品分类1</option>
+                                                                              <option value="4"
+                                                                                      >--------产品分类2</option>
+                                                                              <option value="5"
+                                                                                      >解决方案</option>
+                                                                              <option value="6"
+                                                                                      >资讯动态</option>
+                                                                              <option value="7"
+                                                                                      >联系我们</option>
+                                                                                              
+                                      </select>  
+                                    <button class="layui-btn fleft" type="submit">搜索</button>
+                                </form>
+                            </div>
+                            <div class="mar_t_15">
+                                <table class="layui-table ">
+            
+                                    <thead>
+                                      <tr>
+                                        <th>ID</th>
+                                        <th>标题</th>
+                                        <th>所属分类</th>
+                                        <th>排序序号<br><span class="tishi" style="font-weight: normal;">数字越小越靠前</span></th>
+                                        <th>发布时间</th>
+                                        <th>操作</th>
+                                      </tr> 
+                                    </thead>
+                                    <tbody>
+                                                                                    <tr>
+                                        <td>26</td>
+                                        <td>射频电子开关</td>
+                                        <td>产品中心</td>
+                                        <td class="text-c listorder"><input type="number" size="4" attr-id="26" attr-model="archives" name="listorder" value="0" class="public_listorder"></td>
+                                        <td>2020-04-07 11:03</td>
+                                        <td>
+                                          <a href="/dongadmin/content/edit.html?id=26" title="修改"><i class="layui-icon layui-icon-edit"></i></a>
+                                          <a onClick="public_del('/dongadmin/content/delect.html?id=26')" href="javascript:;"  title="删除"><i class="layui-icon layui-icon-delete"></i></a>
+                                        </td>
+                                      </tr>
+                                                                              <tr>
+                                        <td>25</td>
+                                        <td>新型开关元件</td>
+                                        <td>产品中心</td>
+                                        <td class="text-c listorder"><input type="number" size="4" attr-id="25" attr-model="archives" name="listorder" value="0" class="public_listorder"></td>
+                                        <td>2020-04-07 10:54</td>
+                                        <td>
+                                          <a href="/dongadmin/content/edit.html?id=25" title="修改"><i class="layui-icon layui-icon-edit"></i></a>
+                                          <a onClick="public_del('/dongadmin/content/delect.html?id=25')" href="javascript:;"  title="删除"><i class="layui-icon layui-icon-delete"></i></a>
+                                        </td>
+                                      </tr>
+                                                                              <tr>
+                                        <td>24</td>
+                                        <td>投入式液位计</td>
+                                        <td>产品中心</td>
+                                        <td class="text-c listorder"><input type="number" size="4" attr-id="24" attr-model="archives" name="listorder" value="0" class="public_listorder"></td>
+                                        <td>2020-04-07 10:53</td>
+                                        <td>
+                                          <a href="/dongadmin/content/edit.html?id=24" title="修改"><i class="layui-icon layui-icon-edit"></i></a>
+                                          <a onClick="public_del('/dongadmin/content/delect.html?id=24')" href="javascript:;"  title="删除"><i class="layui-icon layui-icon-delete"></i></a>
+                                        </td>
+                                      </tr>
+                                                                              <tr>
+                                        <td>23</td>
+                                        <td>HEMERA在线气体分析仪</td>
+                                        <td>产品中心</td>
+                                        <td class="text-c listorder"><input type="number" size="4" attr-id="23" attr-model="archives" name="listorder" value="0" class="public_listorder"></td>
+                                        <td>2020-04-07 10:53</td>
+                                        <td>
+                                          <a href="/dongadmin/content/edit.html?id=23" title="修改"><i class="layui-icon layui-icon-edit"></i></a>
+                                          <a onClick="public_del('/dongadmin/content/delect.html?id=23')" href="javascript:;"  title="删除"><i class="layui-icon layui-icon-delete"></i></a>
+                                        </td>
+                                      </tr>
+                                                                              <tr>
+                                        <td>22</td>
+                                        <td>防爆行程开关</td>
+                                        <td>产品中心</td>
+                                        <td class="text-c listorder"><input type="number" size="4" attr-id="22" attr-model="archives" name="listorder" value="0" class="public_listorder"></td>
+                                        <td>2020-04-07 10:52</td>
+                                        <td>
+                                          <a href="/dongadmin/content/edit.html?id=22" title="修改"><i class="layui-icon layui-icon-edit"></i></a>
+                                          <a onClick="public_del('/dongadmin/content/delect.html?id=22')" href="javascript:;"  title="删除"><i class="layui-icon layui-icon-delete"></i></a>
+                                        </td>
+                                      </tr>
+                                                                              <tr>
+                                        <td>21</td>
+                                        <td>D系列触点磁性开关</td>
+                                        <td>产品中心</td>
+                                        <td class="text-c listorder"><input type="number" size="4" attr-id="21" attr-model="archives" name="listorder" value="0" class="public_listorder"></td>
+                                        <td>2020-04-07 10:52</td>
+                                        <td>
+                                          <a href="/dongadmin/content/edit.html?id=21" title="修改"><i class="layui-icon layui-icon-edit"></i></a>
+                                          <a onClick="public_del('/dongadmin/content/delect.html?id=21')" href="javascript:;"  title="删除"><i class="layui-icon layui-icon-delete"></i></a>
+                                        </td>
+                                      </tr>
+                                                                              <tr>
+                                        <td>20</td>
+                                        <td>eao国产08系</td>
+                                        <td>产品中心</td>
+                                        <td class="text-c listorder"><input type="number" size="4" attr-id="20" attr-model="archives" name="listorder" value="0" class="public_listorder"></td>
+                                        <td>2020-04-07 10:51</td>
+                                        <td>
+                                          <a href="/dongadmin/content/edit.html?id=20" title="修改"><i class="layui-icon layui-icon-edit"></i></a>
+                                          <a onClick="public_del('/dongadmin/content/delect.html?id=20')" href="javascript:;"  title="删除"><i class="layui-icon layui-icon-delete"></i></a>
+                                        </td>
+                                      </tr>
+                                                                              <tr>
+                                        <td>19</td>
+                                        <td>BIG-LTM-4005S</td>
+                                        <td>产品中心</td>
+                                        <td class="text-c listorder"><input type="number" size="4" attr-id="19" attr-model="archives" name="listorder" value="0" class="public_listorder"></td>
+                                        <td>2020-04-07 10:48</td>
+                                        <td>
+                                          <a href="/dongadmin/content/edit.html?id=19" title="修改"><i class="layui-icon layui-icon-edit"></i></a>
+                                          <a onClick="public_del('/dongadmin/content/delect.html?id=19')" href="javascript:;"  title="删除"><i class="layui-icon layui-icon-delete"></i></a>
+                                        </td>
+                                      </tr>
+                                                                              <tr>
+                                        <td>18</td>
+                                        <td>BIG-LTM-4004S</td>
+                                        <td>产品中心</td>
+                                        <td class="text-c listorder"><input type="number" size="4" attr-id="18" attr-model="archives" name="listorder" value="0" class="public_listorder"></td>
+                                        <td>2020-04-07 10:48</td>
+                                        <td>
+                                          <a href="/dongadmin/content/edit.html?id=18" title="修改"><i class="layui-icon layui-icon-edit"></i></a>
+                                          <a onClick="public_del('/dongadmin/content/delect.html?id=18')" href="javascript:;"  title="删除"><i class="layui-icon layui-icon-delete"></i></a>
+                                        </td>
+                                      </tr>
+                                                                              <tr>
+                                        <td>17</td>
+                                        <td>BIG-LTM-4002S</td>
+                                        <td>产品中心</td>
+                                        <td class="text-c listorder"><input type="number" size="4" attr-id="17" attr-model="archives" name="listorder" value="0" class="public_listorder"></td>
+                                        <td>2020-04-07 10:48</td>
+                                        <td>
+                                          <a href="/dongadmin/content/edit.html?id=17" title="修改"><i class="layui-icon layui-icon-edit"></i></a>
+                                          <a onClick="public_del('/dongadmin/content/delect.html?id=17')" href="javascript:;"  title="删除"><i class="layui-icon layui-icon-delete"></i></a>
+                                        </td>
+                                      </tr>
+                                                  
+                                    </tbody>
+                                  </table>
+                                  <ul class="pagination"><li class="disabled"><span>&laquo;</span></li> <li class="active"><span>1</span></li><li><a href="/dongadmin/content/index.html?page=2">2</a></li><li><a href="/dongadmin/content/index.html?page=3">3</a></li> <li><a href="/dongadmin/content/index.html?page=2">&raquo;</a></li></ul>                            </div>
+                           
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+    <footer>
+    <script type="text/javascript" src="/public/static/index/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/public/static/index/layui/layui.js"></script>
+
+    <script type="text/javascript" src="/public/static/admin2/ueditor/1.4.3/ueditor.config.js"></script>
+    <script type="text/javascript" src="/public/static/admin2/ueditor/1.4.3/ueditor.all.min.js"> </script>
+    <script type="text/javascript" src="/public/static/admin2/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+
+    <script>
+            layui.use('element', function () {
+                var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模               
+            });
+
+            layui.use('form', function(){
+            var form = layui.form;
+            
+            //监听提交
+            form.on('submit(formDemo)', function(data){
+                layer.msg(JSON.stringify(data.field));
+                return false;
+            });
+            });
+        </script>
+
+
+    <script>
+    /*-删除时候确认*/
+    function public_del(url){
+        layui.use('layer', function(){
+            var layer = layui.layer;
+            layer.confirm('确认要删除吗？',function(index){
+                window.location.href=url;
+            });
+        });
+    }
+
+
+    layui.use('upload', function () {
+      var upload = layui.upload;
+
+      //执行上传实例
+      var uploadInst = upload.render({
+        elem: '#test1' //绑定元素
+        , url: '/dongadmin/uploader/upload' //上传接口
+        , done: function (res) {
+          //上传完毕回调
+          console.log(res);
+          //path = JSON.stringify(res.path);
+          //path = path.replace("\"", "").replace("\"", "");
+          $(".public_thumb_input").val(res.path);
+          $(".public_thumb").attr("src", res.path);
+          $(".public_thumb_box").css("display", "block");
+        }
+        , error: function () {
+          //请求异常回调
+        }
+      });
+    });
+
+
+    //实时删除图片
+    $(".delete_img").click(function(){
+        var path=$(this).parent().children(".public_thumb_input").val();
+        var url="/dongadmin/uploader/delete_img";
+        var model = $(this).parent().attr('attr-model');//编辑默认删除图片
+        var id=$("input[name='id']").val();//编辑默认删除图片
+        postData = {'path':path,'model':model,'id':id};
+        $.post(url,postData,function(result){
+          result=JSON.parse(result);
+          if(result.status==1){
+            $(".public_thumb_input").val("");
+            $(".public_thumb").attr("src", "");
+            $(".public_thumb_box").css("display", "none");
+            layui.use('layer', function(){
+              var layer = layui.layer;
+              layer.msg('已经删除成功！');
+            }); 
+          }
+        });
+    });
+
+    //排序
+    $('.listorder input').blur(function() {
+    // 编写我们的抛送的逻辑
+    //获取主键id
+    var id = $(this).attr('attr-id');
+    var model=$(this).attr('attr-model');
+    // 获取排序的值
+    var listorder = $(this).val();
+    if(!listorder){
+      return;
+    }
+    var postData = {
+
+        'id' : id,
+        'model':model,
+        'listorder':listorder,
+    };
+
+    var url = "/dongadmin/base/listorder";
+    // 抛送http
+    $.post(url, postData, function(result){
+        // 逻辑
+        if(result.code == 1) {
+            location.href=result.data;
+        }else {
+            alert(result.msg);
+        }
+    },"json");
+
+
+});
+
+    </script>
+</footer>
+
+
+
+
+</body>
+
+</html>
